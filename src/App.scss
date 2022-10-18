@@ -43,6 +43,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+    font-family: "Blair";
+    src: local("Blair"),
+    url("./fonts/Blair.ttf") format("truetype");
+}
+
+// HEADER COMPONENT
+
 .header-container {
     display: flex;
     flex-wrap: wrap;
@@ -102,3 +111,44 @@ table {
 }
 
 
+// LANDING PAGE COMPONENT
+
+.top-container {
+    position: relative;
+}
+
+.top-img-container {
+    background-image: url('../src/assets/images/front.webp');
+    background-size: cover;
+    background-position: 50% 20%;
+    filter: brightness(35%) blur(2px);
+    height: 700px;
+    width: 100%;
+   margin-top: 25px;
+}
+.heading {
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      z-index: 2;
+  color: $snow-white;
+    font-family: 'Blair';
+    width: 900px;
+    text-align: center;
+    line-height: 3.5rem;
+}
+.paragraph {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      z-index: 2;
+      color: $snow-white;
+      font-family: $regular;
+      font-size: 1.5rem;
+      width: 900px;
+      text-align: center;
+      line-height: 2rem;
+}
