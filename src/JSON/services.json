@@ -1,0 +1,23 @@
+[
+    {
+        "img": "imgs/scissors-02.png",
+        "txt": "Hair Cuts"
+    },
+    {
+        "img": "imgs/hair-coloring-03.png",
+        "txt": "Hair Coloring"
+    },
+    {
+        "img": "imgs/hair-straightener-01.png",
+        "txt": "Yuko Hair Straightening"
+    },
+    {
+        "img": "imgs/nails-04.png",
+        "txt": "Manicure & Pedicure"
+    },
+    {
+        "img": "imgs/skincare-05.png",
+        "txt": "Skin Care"
+    }
+
+]

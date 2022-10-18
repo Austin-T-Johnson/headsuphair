@@ -109,7 +109,18 @@ table {
    font-size: 1.5rem;
    font-family: $header;
 }
-
+.home {
+    cursor: pointer;
+}
+.about {
+    cursor: pointer;
+}
+.services {
+    cursor: pointer;
+}
+.contact {
+    cursor: pointer;
+}
 
 // LANDING PAGE COMPONENT
 
@@ -151,4 +162,34 @@ table {
       width: 900px;
       text-align: center;
       line-height: 2rem;
+}
+.h1 {
+    font-family: 'Blair';
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.service-info {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 25px;
+    width: 700px;
+    margin: 0 auto;
+    line-height: 2rem;
+    font-family: $regular;
+}
+.icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: $regular;
+    padding: 25px;
+}
+.service-img {
+    height: 100px;
+    width: auto;
+}
+.service-img-container {
+    display: flex;
+    justify-content: center;
 }

@@ -18,10 +18,10 @@ const Header = () => {
                 </div>
             </div>
             <div className='nav-container'>
-                <div>Home</div>
-                <div>About</div>
-                <div>Services</div>
-                <div>Contact</div>
+                <div className='home'>Home</div>
+                <div className='about'>About</div>
+                <div className='services'>Services</div>
+                <div className='contact'>Contact</div>
             </div>
         </div>
     )
