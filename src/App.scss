@@ -127,6 +127,7 @@ table {
 // TOP SECTION PHOTO CONTAINER
 .top-container {
     position: relative;
+
 }
 
 .top-img-container {
@@ -137,6 +138,7 @@ table {
     height: 700px;
     width: 100%;
    margin-top: 25px;
+
 }
 .heading {
     font-size: 3rem;
@@ -150,6 +152,12 @@ table {
     width: 900px;
     text-align: center;
     line-height: 3.5rem;
+
+    @include media-query($small) {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+     }
 }
 .paragraph {
     position: absolute;
@@ -163,6 +171,12 @@ table {
       width: 900px;
       text-align: center;
       line-height: 2rem;
+
+      @include media-query($small) {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+     }
 }
 
 // SERVICES SECTION
@@ -174,6 +188,12 @@ table {
     padding-top: 50px;
     width: 500px;
     margin: 0 auto;
+
+    @include media-query($small) {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+     }
 }
 .service-info {
     font-size: 1.5rem;
@@ -183,6 +203,12 @@ table {
     margin: 0 auto;
     line-height: 2rem;
     font-family: $regular;
+
+    @include media-query($small) {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2.5rem;
+     }
 }
 .icon-container {
     width: 100%;
@@ -190,6 +216,11 @@ table {
     justify-content: space-evenly;
     font-family: $regular;
     padding: 25px;
+
+    @include media-query($small) {
+       display: block;
+       text-align: center;
+     }
 }
 .service-img {
     height: 100px;
@@ -261,6 +292,11 @@ button {
     background-color: #F0F2F5;
     display: flex;
     flex-wrap: wrap;
+
+    @include media-query($small) {
+       display: block;
+       height: auto;
+    }
     
    }
    .about-us-h1 {
@@ -269,6 +305,12 @@ button {
     font-size: 3rem;
     text-align: center;
     padding: 25px;
+
+    @include media-query($small) {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+     }
    }
    .outside-img-container {
     width: 50%;
@@ -289,12 +331,18 @@ button {
     text-align: center;
     display: flex;
     align-items: center;
+
+    @include media-query($small) {
+       width: 100%;
+       font-size: 1rem;
+     }
    }
    .stepper {
-  
     height: auto;
     width: 50%;
     display: flex;
     justify-content: center;
-   
+    @include media-query($small) {
+        width: 100%;
+    }
    }
