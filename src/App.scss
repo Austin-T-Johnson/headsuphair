@@ -1,54 +1,141 @@
 @import './scss/scss.scss';
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 @font-face {
     font-family: "Blair";
     src: local("Blair"),
-    url("./fonts/Blair.ttf") format("truetype");
+        url("./fonts/Blair.ttf") format("truetype");
 }
 
 // HEADER COMPONENT
@@ -60,65 +147,75 @@ table {
     text-align: center;
     padding-top: 25px;
 }
+
 .contact-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width:100%;
+    width: 100%;
+
     @include media-query($small) {
         flex-direction: column;
         gap: 15px;
     }
-  }
-  .call-now {
+}
+
+.call-now {
     font-family: $regular;
-   
+
     @include media-query($small) {
         width: 150px;
-        font-size:0.8rem;
-    
+        font-size: 0.8rem;
+
     }
 }
+
 .address {
     font-family: $regular;
     width: 150px;
-    line-height:1.2rem ;
-   
+    line-height: 1.2rem;
+
     @include media-query($small) {
-        font-size:0.8rem;
+        font-size: 0.8rem;
     }
 }
+
 .logo-container {
     @include media-query($small) {
         order: -1;
         padding-bottom: 15px;
-     }
+    }
 }
 
 .logo {
     height: 58px;
     width: 213px;
-   
+
 }
+
 .nav-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 50px;
     width: 100%;
-   height: 50px;
-   font-size: 1.5rem;
-   font-family: $links;
+    height: 50px;
+    font-size: 1.5rem;
+    font-family: $links;
 }
+
 .home {
     cursor: pointer;
 }
+
 .about {
     cursor: pointer;
 }
+
 .services {
     cursor: pointer;
 }
+
 .contact {
     cursor: pointer;
 }
@@ -138,17 +235,18 @@ table {
     filter: brightness(35%) blur(2px);
     height: 700px;
     width: 100%;
-   margin-top: 25px;
+    margin-top: 25px;
 
 }
+
 .heading {
     font-size: 3rem;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-      z-index: 2;
-  color: $snow-white;
+    z-index: 2;
+    color: $snow-white;
     font-family: 'Blair';
     width: 900px;
     text-align: center;
@@ -158,26 +256,27 @@ table {
         width: 100%;
         font-size: 2rem;
         line-height: 2.5rem;
-     }
+    }
 }
+
 .paragraph {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-      z-index: 2;
-      color: $snow-white;
-      font-family: $regular;
-      font-size: 1.5rem;
-      width: 900px;
-      text-align: center;
-      line-height: 2rem;
+    z-index: 2;
+    color: $snow-white;
+    font-family: $regular;
+    font-size: 1.5rem;
+    width: 900px;
+    text-align: center;
+    line-height: 2rem;
 
-      @include media-query($small) {
+    @include media-query($small) {
         width: 100%;
         font-size: 1rem;
         line-height: 1.5rem;
-     }
+    }
 }
 
 // SERVICES SECTION
@@ -194,8 +293,9 @@ table {
         width: 100%;
         font-size: 2rem;
         line-height: 2.5rem;
-     }
+    }
 }
+
 .service-info {
     font-size: 1.5rem;
     text-align: center;
@@ -209,8 +309,9 @@ table {
         width: 100%;
         font-size: 1rem;
         line-height: 2.5rem;
-     }
+    }
 }
+
 .icon-container {
     width: 100%;
     display: flex;
@@ -219,21 +320,25 @@ table {
     padding: 25px;
 
     @include media-query($small) {
-       display: block;
-       text-align: center;
-     }
+        display: block;
+        text-align: center;
+    }
 }
+
 .service-img {
     height: 100px;
     width: auto;
 }
+
 .service-img-container {
     display: flex;
     justify-content: center;
 }
+
 .button-div {
-   text-align: center;
+    text-align: center;
 }
+
 button {
     --color: #560bad;
     font-family: inherit;
@@ -252,10 +357,10 @@ button {
     color: black;
     font-family: $regular;
     cursor: pointer;
-   
-   }
-   
-   button:before {
+
+}
+
+button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -263,31 +368,31 @@ button {
     height: 150px;
     width: 200px;
     border-radius: 50%;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     color: #fff;
-   }
-   
-   button:before {
+}
+
+button:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
-   }
-   
-   button:hover:before {
+}
+
+button:hover:before {
     top: -30px;
     left: -30px;
-   }
-   
-   button:active:before {
+}
+
+button:active:before {
     background: #3a0ca3;
     transition: background 0s;
-   }
+}
 
-   //ABOUT SECTION
+//ABOUT SECTION
 
-   .about-section-container {
+.about-section-container {
     width: 100%;
     height: 700px;
     background-color: #F0F2F5;
@@ -295,12 +400,13 @@ button {
     flex-wrap: wrap;
 
     @include media-query($small) {
-       display: block;
-       height: auto;
+        display: block;
+        height: auto;
     }
-    
-   }
-   .about-us-h1 {
+
+}
+
+.about-us-h1 {
     width: 100%;
     font-family: "Blair";
     font-size: 3rem;
@@ -311,18 +417,21 @@ button {
         width: 100%;
         font-size: 2rem;
         line-height: 2.5rem;
-     }
-   }
-   .outside-img-container {
+    }
+}
+
+.outside-img-container {
     width: 50%;
     padding: 25px 55px;
-   
-   }
-   .outside-img {
+
+}
+
+.outside-img {
     height: 449px;
     width: 600px;
-   }
-   .about-txt-container {
+}
+
+.about-txt-container {
     width: 50%;
     padding: 25px 55px;
     font-family: $regular;
@@ -334,37 +443,50 @@ button {
     align-items: center;
 
     @include media-query($small) {
-       width: 100%;
-       font-size: 1rem;
-     }
-   }
-   .stepper {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+.stepper {
     height: auto;
     width: 50%;
     display: flex;
     justify-content: center;
+
     @include media-query($small) {
         width: 100%;
     }
-   }
+}
 
-   // TESTIMONIALS
+// TESTIMONIALS
 
-   .testimonials-section {
+.testimonials-section {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
-    
-   }
-   .testimonials-txt {
+
+    @include media-query($small) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.testimonials-txt {
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-size: 3rem;
     font-family: "Blair";
     padding: 100px;
-   }
+  
+    @include media-query($small) {
+        font-size: 2rem;
+    }
+}
 
-   .card {
+.card {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     color: #9e9e9e;
     display: inline-block;
@@ -380,21 +502,21 @@ button {
     border-radius: 5px;
     border-top: 5px solid #006F92;
     margin-bottom: 100px;
-  }
-  
-  .card *,
-  .card *:before {
+}
+
+.card *,
+.card *:before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out;
-  }
-  
-  .card figcaption {
+}
+
+.card figcaption {
     padding: 13% 10% 12%;
-  }
-  
-  .card figcaption:before {
+}
+
+.card figcaption:before {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #fff;
@@ -410,71 +532,92 @@ button {
     position: absolute;
     top: -30px;
     width: 60px;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     color: #3c3c3c;
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
     margin: 10px 0 5px;
-  }
-  
-  .card h4 {
+}
+
+.card h4 {
     font-weight: 400;
     margin: 0;
     opacity: 0.5;
-  }
-  
-  .card blockquote {
+}
+
+.card blockquote {
     font-style: italic;
     font-weight: 300;
     margin: 0 0 20px;
-  }
+}
 
-  // CONTACT SECTION
+// CONTACT SECTION
 
-  .contact-section-container {
+.contact-section-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
     background-color: #F0F2F5;
-  }
-  .contact-us {
+
+    @include media-query($small) {
+        display: block;
+    }
+}
+
+.contact-us {
     font-size: 3rem;
     font-family: "Blair";
     width: 100%;
     padding: 100px;
-  }
 
-  .call-txt {
+    @include media-query($small) {
+        font-size: 2rem;
+    }
+}
+
+.call-txt {
     font-size: 1.5rem;
     font-family: $regular;
     width: 100%;
-  }
-  .phone-number {
+}
+
+.phone-number {
     font-size: 1.2rem;
     font-family: $regular;
     width: 100%;
     padding: 45px;
-  }
-  .send-message-txt {
+}
+
+.send-message-txt {
     font-size: 1.2rem;
     font-family: $regular;
     width: 100%;
     padding: 45px;
-  }
-  .form-container {
+}
+
+.form-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 25px;
-  }
-  .form-btn {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 50px;
-  }
+
+    @include media-query($small) {
+        display: block;
+    }
+}
+
+.form-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @include media-query($small) {
+        display: block;
+    }
+}
