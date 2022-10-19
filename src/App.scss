@@ -204,20 +204,45 @@ table {
     font-family: $links;
 }
 
-.home {
+.link {
     cursor: pointer;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+   border: none;
+   background: none;
+}
+.link:focus,
+.link:hover {
+    color: #006F92;
+   
 }
 
-.about {
-    cursor: pointer;
+.link:focus:after,
+.link:hover:after {
+    width: 100%;
+    left: 0%;
 }
 
-.services {
-    cursor: pointer;
+.link:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #006F92;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
-
-.contact {
-    cursor: pointer;
+.animated {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 // LANDING PAGE COMPONENT
@@ -480,7 +505,7 @@ button:active:before {
     font-size: 3rem;
     font-family: "Blair";
     padding: 100px;
-  
+
     @include media-query($small) {
         font-size: 2rem;
     }
