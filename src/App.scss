@@ -174,7 +174,7 @@ table {
     font-family: $regular;
     width: 150px;
     line-height: 1.2rem;
-
+    cursor: pointer;
     @include media-query($small) {
         font-size: 0.8rem;
     }

@@ -9,7 +9,7 @@ const Contact = () => {
                 <div className='contact-us'>Contact Us</div>
                 <div className='call-txt'>Call now to make an appointment</div>
                 <div className='phone-number'>
-                    <FontAwesomeIcon className='phone-icon' icon={faPhone} /> (760) 325-4247
+                   <a href="tel:760-325-4247"> <FontAwesomeIcon className='phone-icon' icon={faPhone} /> (760) 325-4247</a>
                 </div>
                 <div className='send-message-txt'>Or send us a message &#8595;</div>
                 <div className='form-container'>
