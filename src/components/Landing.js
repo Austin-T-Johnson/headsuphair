@@ -19,9 +19,9 @@ const Landing = () => {
                 <div className='h1'>Hair & Beauty Services</div>
                 <div className='service-info'>We carry the finest beauty products and offer the largest selection of hair and beauty services in the Coachella Valley</div>
                 <div className='icon-container'>
-                    {servicesIcons.map((service) => {
+                    {servicesIcons.map((service,idx) => {
                         return (
-                            <div className='service-icon-container'>
+                            <div className='service-icon-container' key={idx}>
                                 <div className='service-img-container'>
                                     <img src={service.img} className='service-img' alt='services icons' />
                                 </div>
