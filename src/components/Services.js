@@ -1,6 +1,7 @@
 import React from 'react'
 import Contact from './Contact'
 import servicesPricing from '../JSON/services-pricing.json'
+import nailServices from '../JSON/nail-services.json'
 const Services = () => {
     return (
         <>
@@ -46,6 +47,15 @@ const Services = () => {
             <div className='bottom-right-h3-container'>
                 <h3>Our prices vary depending upon the length of hair and level of stylist. Prices subject to change without notice.</h3>
             </div>
+
+            <div className='nail-service-container'>
+                <h1>Nail Services</h1>
+            {nailServices.map((service) => {
+                return (
+                   <p className='service-card-p'>{service.txt}</p>
+               )
+            })}
+             </div>
             <Contact />
 
         </>
