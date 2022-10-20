@@ -677,6 +677,7 @@ h1 {
 }
 h2, h3 {
     color: #9C710B;
+    padding: 10px;
 }
 p {
     font-size:1.2rem;
@@ -684,5 +685,8 @@ p {
     line-height: 2.5rem;;
 }
 .services-card {
+    width: 500%;
+}
+.service-txt-container {
     width: 25%;
 }

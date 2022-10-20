@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import services from '../JSON/services.json'
+import servicesIcons from '../JSON/services-icons.json'
 import Stepper from './Stepper'
 import Contact from './Contact'
 
@@ -19,7 +19,7 @@ const Landing = () => {
                 <div className='h1'>Hair & Beauty Services</div>
                 <div className='service-info'>We carry the finest beauty products and offer the largest selection of hair and beauty services in the Coachella Valley</div>
                 <div className='icon-container'>
-                    {services.map((service) => {
+                    {servicesIcons.map((service) => {
                         return (
                             <div className='service-icon-container'>
                                 <div className='service-img-container'>
