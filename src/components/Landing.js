@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import services from '../JSON/services.json'
 import Stepper from './Stepper'
-import Form from './Form'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import Contact from './Contact'
+
+
+
 const Landing = () => {
     return (
         <>
@@ -21,7 +23,7 @@ const Landing = () => {
                         return (
                             <div className='service-icon-container'>
                                 <div className='service-img-container'>
-                                    <img src={service.img} className='service-img' />
+                                    <img src={service.img} className='service-img' alt='services icons' />
                                 </div>
                                 <div className='service-txt'>{service.txt}</div>
                             </div>
@@ -29,12 +31,11 @@ const Landing = () => {
                     })}
                 </div>
                 <div className='button-div'>
-                    <button>See All Services</button>
+                    <button><Link to='/services'>See All Services</Link></button>
                 </div>
 
-                <div className='about-section-container'>
+                <div className='about-section-container' id='about'>
                     <div className='about-us-h1'>About Us</div>
-                    {/* <div className='outside-img-container'><img src={OutdoorImg} alt="Heads Up Outdoor Sign" className='outside-img'/></div> */}
                     <div className='stepper'> <Stepper /> </div>
                     <div className='about-txt-container'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 </div>
@@ -72,30 +73,7 @@ const Landing = () => {
                 </div>
 
             </div>
-
-            <div className='contact-section-container'>
-                <div className='contact-us'>Contact Us</div>
-                <div className='call-txt'>Call now to make an appointment</div>
-                <div className='phone-number'>
-                    <FontAwesomeIcon className='phone-icon' icon={faPhone} /> (760) 325-4247
-                </div>
-                <div className='send-message-txt'>Or send us a message &#8595;</div>
-                <div className='form-container'>
-                    <Form />
-                </div>
-               <div className='form-btn'><button>Send</button></div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
+            <Contact />
 
         </>
     )

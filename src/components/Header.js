@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/images/logo.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -18,10 +19,10 @@ const Header = () => {
                 </div>
             </div>
             <div className='nav-container'>
-                <div className='link'>Home</div>
-                <div className='link'>About</div>
-                <div className='link'>Services</div>
-                <div className='link'>Contact</div>
+                <div className='link'><Link to='/'>Home</Link></div>
+                <a href='/#about'><div className='link'>About</div></a>
+                <div className='link'><Link to='/services'>Services</Link></div>
+                <a href="#contact"><div className='link'>Contact</div></a>
             </div>
         </div>
     )
