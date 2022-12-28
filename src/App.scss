@@ -259,13 +259,14 @@ table {
 }
 
 .top-img-container {
-    background-image: url('../src/assets/images/front.webp');
+    background-image: url('../src/assets/images/banner.png');
     background-size: cover;
     background-position: 50% 20%;
-    filter: brightness(35%) blur(2px);
+    // filter: brightness(35%) blur(2px);
     height: 700px;
     width: 100%;
     margin-top: 25px;
+    box-shadow: 0px 5px 10px #606060;
 
 }
 
@@ -673,13 +674,14 @@ button:active:before {
     width: 100%;
     padding: 100px 50px;
     gap: 50px;
-    position: relative;
-
+    // background-color: green;
     @include media-query($small) {
         padding: 100px 0px;
         gap:0px;
     }
 }
+
+
 
 strong {
     font-weight: 800;
@@ -719,11 +721,15 @@ h3 {
         text-align: center;
     }
 }
+.left-container {
+    width: 50%;
+    // background-color: red;
+}
 
 .services-card {
-    width: 50%;
+    // width: 100%;
     padding: 50px 0px;
-
+    // background-color: yellow;
     @include media-query($small) {
         width: 100%;
         padding:25px 0px;
@@ -735,16 +741,20 @@ h3 {
   
 }
 
-.service-txt-container {
-    width: 90%;
-   
+.left-txt-container {
+    width: 80%;
+    // background-color: green;
 }
 
-.services-pricing-container {
+.right-container {
+    // background-color: blue;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: absolute;
-    top: 7%;
-    right: -15%;
+    right: 0;
+    padding-top: 50px;
 
     @include media-query($small) {
         right:0;
@@ -752,6 +762,10 @@ h3 {
         width: 100%;
        
     }
+}
+.right-txt-container {
+    width: 90%;
+    // background-color: yellow;
 }
 
 .bottom-right-h3-container {
