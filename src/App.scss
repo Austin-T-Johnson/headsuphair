@@ -325,11 +325,21 @@ table {
     background-color: rgba(0, 0, 0, 0.15);
     padding: 25px;
     border-radius: 5px;
+    @include media-query($small) {
+      
+        margin-bottom: 15%;
+    }
+   
 }
 .services-header span {
     font-size: 3rem;
     font-family: 'blair';
     color: black;
+
+    @include media-query($small) {
+        font-size: 1.5rem;
+       
+    }
 }
 
 .h1 {
@@ -371,7 +381,9 @@ table {
     padding: 25px;
     padding-left: 65px;
     @include media-query($small) {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
         text-align: center;
         padding-left: 0px;
     }
@@ -697,7 +709,7 @@ table {
    width: 100%;
     padding: 100px 50px;
     gap: 50px;
-    // background-color: green;
+
     @include media-query($small) {
         padding: 100px 0px;
         gap:0px;
@@ -747,6 +759,11 @@ h3 {
 .services-info-container {
     width: 100%;
     display: flex;
+
+    @include media-query($small) {
+        width: 100%;
+      display: block;
+    }
     
 }
 .MuiCardHeader-title{
