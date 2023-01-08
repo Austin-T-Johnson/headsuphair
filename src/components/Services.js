@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Services = () => {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -71,7 +71,7 @@ const Services = () => {
                   aria-expanded={expanded}
                   aria-label="show more"
                 >
-                  {/* <ExpandMoreIcon /> */}
+                  <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -101,7 +101,7 @@ const Services = () => {
                   aria-expanded={expanded}
                   aria-label="show more"
                 >
-                  {/* <ExpandMoreIcon /> */}
+                  <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -130,7 +130,7 @@ const Services = () => {
                   aria-expanded={expanded}
                   aria-label="show more"
                 >
-                  {/* <ExpandMoreIcon /> */}
+                  <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
