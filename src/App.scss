@@ -155,7 +155,7 @@ table {
 
   @include media-query($small) {
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
   }
 }
 
@@ -163,8 +163,8 @@ table {
   font-family: $regular;
 
   @include media-query($small) {
-    width: 150px;
-    font-size: 0.8rem;
+    width: 200px;
+    font-size: 1rem;
   }
 }
 
@@ -174,7 +174,8 @@ table {
   line-height: 1.2rem;
   cursor: pointer;
   @include media-query($small) {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    width: 200px;
   }
 }
 
@@ -309,25 +310,33 @@ table {
 
 // SERVICES SECTION
 
-.services-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin: 0 auto;
+.services-header-img {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+  border-radius: 10px;
+  background-image: url("../src/assets/images/services-img-2.jpeg");
+  background-size: cover;
+  background-position: 25% 75%;
+  height: 450px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: 25px;
-  border-radius: 5px;
+  position: relative;
+  filter: brightness(55%);
+
   @include media-query($small) {
     margin-bottom: 15%;
   }
 }
-.services-header span {
+
+.services-header-txt {
   font-size: 3rem;
   font-family: "blair";
-  color: black;
-
+  color: white;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  z-index: 100;
   @include media-query($small) {
     font-size: 1.5rem;
   }
@@ -370,7 +379,7 @@ table {
   justify-content: space-evenly;
   font-family: $regular;
   padding: 25px;
-
+  padding-left: 65px;
   @include media-query($small) {
     display: flex;
     flex-direction: column;
@@ -791,10 +800,26 @@ h3 {
 .services-card-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  //   flex-direction: column;
+  margin: 10% auto;
   gap: 50px;
+
+  @include media-query($small) {
+    width: 600px;
+    display: block;
+  }
 }
+
+// .card-content-div {
+//     max-width: 545px;
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     @include media-query($small) {
+//     // width: 400px;
+//     display: block;
+//   }
+// }
 
 .services-card {
   margin: 0 auto;

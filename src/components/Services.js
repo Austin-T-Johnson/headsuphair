@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Services = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
 
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -36,10 +36,9 @@ const Services = () => {
     <>
       <div className="background"></div>
       <div className="services-container">
-        <div className="services-header">
-          <span>Our Services</span>
-        </div>
-        <div className="services-info-container">
+      <span className="services-header-txt">Our Services</span>
+        <div className="services-header-img"></div>
+        {/* <div className="services-info-container">
           {servicesCard.map((data, idx) => {
             return (
               <div className="services-info" key={idx}>
@@ -52,7 +51,7 @@ const Services = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         <div className="services-card-container">
           <div className="services-card">
@@ -72,7 +71,7 @@ const Services = () => {
                   aria-expanded={expanded}
                   aria-label="show more"
                 >
-                  <ExpandMoreIcon />
+                  {/* <ExpandMoreIcon /> */}
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -102,7 +101,7 @@ const Services = () => {
                   aria-expanded={expanded}
                   aria-label="show more"
                 >
-                  <ExpandMoreIcon />
+                  {/* <ExpandMoreIcon /> */}
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -131,7 +130,7 @@ const Services = () => {
                   aria-expanded={expanded}
                   aria-label="show more"
                 >
-                  <ExpandMoreIcon />
+                  {/* <ExpandMoreIcon /> */}
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
