@@ -1,80 +1,80 @@
 [
     {
-        "txt": "Haircuts..........................$35-$65"
+        "header": "We offer the largest selection of hair and beauty services in the Coachella Valley, click the dropdown below to see our full list of services."
     },
     {
-        "txt": "Child's Haircut (2-10 years)..........$30"
+        "txt": "Haircuts........................................$35-$65"
     },
     {
-        "txt": "Young Adult Haircut (11-14 years).....$40"
+        "txt": "Child's Haircut (2-10 years)........................$30"
     },
     {
-        "txt": "Blow Dry..............................$40"
+        "txt": "Young Adult Haircut (11-14 years)...................$40"
     },
     {
-        "txt": "Curling or Flat Iron.......$20 & up extra"
+        "txt": "Blow Dry............................................$40"
     },
     {
-        "txt": "Bangs Trim.............................$5"
+        "txt": "Curling or Flat Iron.....................$20 & up extra"
     },
     {
-        "txt": "Beard Trim............................$15"
+        "txt": "Bangs Trim...........................................$5"
     },
     {
-        "txt": "Shampoo Set...........................$40"
+        "txt": "Beard Trim..........................................$15"
     },
     {
-        "txt": "Special Occasion Up-Do...........$80 & up"
+        "txt": "Shampoo Set.........................................$40"
     },
     {
-        "txt": "Standard Wave.........................$75"
+        "txt": "Special Occasion Up-Do.........................$80 & up"
     },
     {
-        "txt": "Custom Wave...........................$90"
+        "txt": "Standard Wave.......................................$75"
     },
     {
-        "txt": "Spiral Perm..........................$150"
+        "txt": "Custom Wave.........................................$90"
     },
     {
-        "txt": "Partial Perm..........................$75"
+        "txt": "Spiral Perm........................................$150"
     },
     {
-        "txt": "T-Top Weave......................$85 & up"
+        "txt": "Partial Perm........................................$75"
     },
     {
-        "txt": "Virgin Weave....................$120 & up"
+        "txt": "T-Top Weave....................................$85 & up"
     },
     {
-        "txt": "Lo-Lites.........................$85 & up"
+        "txt": "Virgin Weave..................................$120 & up"
     },
     {
-        "txt": "Weave Touch-Up..................$100 & up"
+        "txt": "Lo-Lites.......................................$85 & up"
     },
     {
-        "txt": "Shades................................$80"
+        "txt": "Weave Touch-Up................................$100 & up"
     },
     {
-        "txt": "Virgin Color..........................$95"
+        "txt": "Shades..............................................$80"
     },
     {
-        "txt": "Color Touch-Up.........................80"
+        "txt": "Virgin Color........................................$95"
     },
     {
-        "txt": "Hi-Lites with Cap.....................$75"
+        "txt": "Color Touch-Up.......................................80"
     },
     {
-        "txt": "Virgin Bleach........................$120"
+        "txt": "Hi-Lites with Cap...................................$75"
     },
     {
-        "txt": "Bleach Touch-Up.......................$95"
+        "txt": "Virgin Bleach......................................$120"
     },
     {
-        "txt": "Color Correction..........Price quotation"
+        "txt": "Bleach Touch-Up.....................................$95"
     },
     {
-        "txt": "Hair Extensions:"
+        "txt": "Color Correction........................Price quotation"
     },
     {
-        "txt": "Babe, Short to Long.......Price quotation"
+        "txt": "Hair Extensions(Babe,Short to Long).....Price quotation"
     }
 ]

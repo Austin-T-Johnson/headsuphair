@@ -31,7 +31,7 @@ const Landing = () => {
                     })}
                 </div>
                 <div className='button-div'>
-                    <button><Link to='/services'>See All Services</Link></button>
+                    <button className='btn-link'><Link to='/services'>See All Services</Link></button>
                 </div>
 
                 <div className='about-section-container' id='about'>
