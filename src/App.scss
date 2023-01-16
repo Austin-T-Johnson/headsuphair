@@ -813,16 +813,18 @@ h3 {
   }
 }
 
-// .card-content-div {
-//     max-width: 545px;
-//     display: flex;
-//     flex-wrap: wrap;
+.service-card-info-wrapper {
+    display: flex;
+}
 
-//     @include media-query($small) {
-//     // width: 400px;
-//     display: block;
-//   }
-// }
+.service-card-text-left {
+    width: 75%;
+    
+}
+
+.service-card-prices-right {
+    width: 25%;
+}
 
 .services-card {
   margin: 0 auto;
