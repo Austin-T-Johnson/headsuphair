@@ -35,7 +35,6 @@ const Services = () => {
     console.log(isExpanded);
   };
 
-
   return (
     <>
       <div className="background"></div>
@@ -73,19 +72,20 @@ const Services = () => {
                         <div className="service-card-text-left">
                           {service.txt.map((txt) => {
                             return (
-                              <Typography paragraph key={index}>{txt}</Typography>
+                              <Typography paragraph key={index}>
+                                {txt}
+                              </Typography>
                             );
                           })}
                         </div>
                         <div className="service-card-prices-right">
-                            {service.price.map((price) => {
-                                return (
-                                   <Typography paragraph key={index}>
-                            {price}
-                          </Typography>  
-                                )
-                            })}
-                         
+                          {service.price.map((price) => {
+                            return (
+                              <Typography paragraph key={index}>
+                                {price}
+                              </Typography>
+                            );
+                          })}
                         </div>
                       </div>
                     </CardContent>

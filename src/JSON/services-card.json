@@ -3,20 +3,20 @@
         "id": 0,
         "title": "Hair Services",
         "info": "We offer the largest selection of hair services in the Coachella Valley, Click the dropdown below to see our full list.",
-        "txt": ["Haircuts", "Child's Haircut (2-10 years)", "Young Adult Haircut (11-14 years)", "Blow Dry",  "Curling or Flat Iron",  "Bangs Trim",  "Beard Trim",  "Shampoo Set",  "Special Occasion Up-Do",  "Standard Wave",  "Custom Wave",  "Spiral Perm",  "Partial Perm", "T-Top Weave",  "Virgin Weave",  "Lo-Lites",  "Weave Touch-Up",  "Shades",  "Virgin Color",  "Color Touch-Up",  "Hi-Lites with Cap",  "Virgin Bleach",  "Bleach Touch-Up",  "Color Correction",  "Hair Extensions(Babe,Short to Lo)"],
-        "price": ["$35-$65", "$30", "$40", "$40", "$20 & up","$5", "$15", "$40", "$80 & up", "$75", "$90", "$150", "$75", "$85 & up", "$120 & up", "$85 & up", "$100 & up", "$80", "$95", "$80", "$75", "$120", "$95", "Price quotation", "Price quotation"]
+        "txt": ["Haircuts:", "Child's Haircut (2-10 years):", "Young Adult Haircut (11-14 years):", "Blow Dry:",  "Curling or Flat Iron:",  "Bangs Trim:",  "Beard Trim:",  "Shampoo Set:",  "Special Occasion Up-Do:",  "Standard Wave:",  "Custom Wave:",  "Spiral Perm:",  "Partial Perm:", "T-Top Weave:",  "Virgin Weave:",  "Lo-Lites:",  "Weave Touch-Up:",  "Shades:",  "Virgin Color:",  "Color Touch-Up:",  "Hi-Lites with Cap:",  "Virgin Bleach:",  "Bleach Touch-Up:",  "Color Correction:",  "Hair Extensions(Babe,Short to Lo):"],
+        "price": ["$35-$65", "$30", "$40", "$40", "$20 & up","$5", "$15", "$40", "$80 & up", "$75", "$90", "$150", "$75", "$85 & up", "$120 & up", "$85 & up", "$100 & up", "$80", "$95", "$80", "$75", "$120", "$95", "Price quote", "Price quote"]
     },
     {   "id": 1,
         "title": "Nail Services",
        "info": "Our licenced nail technician specializes in pedicures, manicures, nail art, and more. Click the dropdown to see a full list of services.",
-       "txt": ["Pedicures", "Manicures", "Nail Art"],
-       "price": ["Price quotation","Price quotation","Price quotation"]
+       "txt": ["Pedicures:", "Manicures:", "Nail Art:"],
+       "price": ["Price quote","Price quote","Price quote"]
     },
     {   "id": 2,
         "title": "Beauty Services",
        "info": "Our beauty technician specializes in all your beauty needs. Click the dropdown to see a full list of services.",
-       "txt": ["30 Minute Massage", "1 Hour Massage", "Facial"],
-       "price": ["Price quotation","Price quotation","Price quotation"]
+       "txt": ["30 Minute Massage:", "1 Hour Massage:", "Facial:"],
+       "price": ["Price quote","Price quote","Price quote"]
     
     }
 ]
