@@ -4,8 +4,6 @@ import servicesIcons from '../JSON/services-icons.json'
 import Stepper from './Stepper'
 import Contact from './Contact'
 
-
-
 const Landing = () => {
     return (
         <>
@@ -37,7 +35,7 @@ const Landing = () => {
                 <div className='about-section-container' id='about'>
                     <div className='about-us-h1'>About Us</div>
                     <div className='stepper'> <Stepper /> </div>
-                    <div className='about-txt-container'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    <div className='about-txt-container'>Located in beautiful Palm Springs just minutes from downtown, Heads Up Hair Designs and Salon Suites has been serving the Coachella Valley for 30+ years. With our team of expert stylists, nail & beauty technicians, we cater to giving the best services available. We truly are your one stop shop for all your beauty needs. Feel free to call or email us with any questions. Walk-in's are always welcome.</div>
                 </div>
 
                 <div className='testimonials-section'>
