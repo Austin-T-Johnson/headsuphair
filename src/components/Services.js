@@ -39,8 +39,10 @@ const Services = () => {
     <>
       <div className="background"></div>
       <div className="services-container">
-        <span className="services-header-txt">Our Services</span>
+      <div className="services-header-img-wrapper">
         <div className="services-header-img"></div>
+        <span className="services-header-txt">Our Services</span>
+      </div>
         <div className="services-card-container">
           {servicesCard.map((service, index) => {
             return (
