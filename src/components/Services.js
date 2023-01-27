@@ -32,17 +32,16 @@ const Services = () => {
       [id]: !expanded[id],
     }));
     setIsExpanded(!isExpanded);
-    console.log(isExpanded);
   };
 
   return (
     <>
       <div className="background"></div>
       <div className="services-container">
-      <div className="services-header-img-wrapper">
-        <div className="services-header-img"></div>
-        <span className="services-header-txt">Our Services</span>
-      </div>
+        <div className="services-header-img-wrapper">
+          <div className="services-header-img"></div>
+          <span className="services-header-txt">Our Services</span>
+        </div>
         <div className="services-card-container">
           {servicesCard.map((service, index) => {
             return (
@@ -72,7 +71,7 @@ const Services = () => {
                     <CardContent>
                       <div className="service-card-info-wrapper">
                         <div className="service-card-text-left">
-                          {service.txt.map((txt) => {
+                          {service.txt.map((txt, index) => {
                             return (
                               <Typography paragraph key={index}>
                                 {txt}
@@ -81,7 +80,7 @@ const Services = () => {
                           })}
                         </div>
                         <div className="service-card-prices-right">
-                          {service.price.map((price) => {
+                          {service.price.map((price, index) => {
                             return (
                               <Typography paragraph key={index}>
                                 {price}
